@@ -1,6 +1,6 @@
-drop database if exists Biblioteca;
-create database Biblioteca;
-use Biblioteca;
+drop database if exists Biblioteca1;
+create database Biblioteca1;
+use Biblioteca1;
 create table informacion_usuario(
 id_Usuario varchar(10),
 nombre varchar(25),
@@ -42,6 +42,7 @@ id_autor varchar(3),
 primary key(id_autor,isbn),
 foreign key(isbn) references libros(isbn),
 foreign key(id_autor) references autores(id_autor)
+
 );
 
 create table ejemplares(
@@ -49,16 +50,19 @@ id_ejemplar int auto_increment,
 isbn varchar(17),
 primary key(id_ejemplar),
 foreign key(isbn) references libros(isbn)
+
 );
 
 create table prestamoslibros(
-id_ejemplar varchar(3),
+id_ejemplar int,
 fechaInicial varchar(10),
 fechaRetorno varchar(10),
 estadoLibro varchar(30),
 id_Usuario varchar(10),
 primary key(id_ejemplar,id_Usuario,fechaInicial),
-foreign key(id_Usuario) references informacion_usuario(id_Usuario)
+foreign key(id_Usuario) references informacion_usuario(id_Usuario),
+foreign key(id_ejemplar) references ejemplares(id_ejemplar)
+
 );
 
 insert into informacion_usuario values('43836776','Rosa Martínez','cra 56# 5-54','Guayabal','3016923050','Profesor');
@@ -80,6 +84,5 @@ insert into autores values('001','Vincent del Toro'),('002','Camilo Perez'),('00
 
 insert into autores_libro values('1017940133100','001'),('1017940133200','002'),('1017940133200','003');
 
-insert into ejemplares(isbn) values ('1017940133200'),('1017940133200'),('1017940133200'),('1017940133100');
-
+insert into ejemplares(isbn) values ('1017940133200'),('1017940133200'),('101);
 
