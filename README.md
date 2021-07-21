@@ -7,5 +7,6 @@ La comunidad académica puede prestar ejemplares, considerando que un profesor p
 La biblioteca necesita conocer información general sobre los usuarios que prestan los libros, de estos se requiere conocer el nombre completo, dirección, la cédula y teléfonos de contacto, tipo de usuario (profesor o estudiante), *visualizar el histórico de préstamos por mes.*
 Se debe contar con un usuario administrador que permite agregar, actualizar o eliminar tanto libros como usuarios.
 
+
 # Modelo relacional 
-(Tablas) [https://github.com/MalejaTM/proyectoFinal/blob/main/tablas.PNG?raw=true]
+![Tablas] (https://github.com/MalejaTM/proyectoFinal/blob/main/tablas.PNG?raw=true)
