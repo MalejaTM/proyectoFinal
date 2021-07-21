@@ -9,4 +9,4 @@ Se debe contar con un usuario administrador que permite agregar, actualizar o el
 
 
 # Modelo relacional 
-![Tablas] (https://github.com/MalejaTM/proyectoFinal/blob/main/tablas.PNG?raw=true)
+![Tablas](https://github.com/MalejaTM/proyectoFinal/blob/main/tablas.PNG?raw=true)
